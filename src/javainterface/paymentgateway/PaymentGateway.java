@@ -16,6 +16,19 @@ import javainterface.paymentgateway.exception.PaymentGatewayException;
  * @param <T>
  */
 public interface PaymentGateway<T> {
+    /**
+     * Credit {@link Payment#amount}
+     * @param payment
+     * @return
+     * @throws PaymentGatewayException 
+     */
     public T credit(Payment payment) throws PaymentGatewayException;
+    
+    /**
+     * Debit {@link Payment#amount}
+     * @param payment
+     * @return
+     * @throws PaymentGatewayException 
+     */
     public T debit(Payment payment) throws PaymentGatewayException;
 }

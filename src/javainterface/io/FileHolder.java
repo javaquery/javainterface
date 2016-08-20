@@ -20,6 +20,11 @@ public class FileHolder extends File{
         super(pathname);
     }
     
+    /**
+     * Represent remote file location
+     * - weburl: http://www.example.com/abc.pdf
+     * - ftp location: /var/java/xyz.doc
+     */
     private String remoteLink;
     private Date timestamp;
 

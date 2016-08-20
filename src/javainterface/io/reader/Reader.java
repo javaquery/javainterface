@@ -16,5 +16,11 @@ import javainterface.io.FileHolder;
  * @param <T>
  */
 public interface Reader<T> {
+    /**
+     * Read file and return file string, objects, etc... as per your requirement.
+     * @param fileHolder
+     * @return
+     * @throws IOException 
+     */
     public T read(FileHolder fileHolder) throws IOException;
 }

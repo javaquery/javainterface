@@ -16,6 +16,19 @@ import javainterface.wallet.exception.WalletException;
  * @param <T>
  */
 public interface Wallet<T> {
+    /**
+     * Credit {@link WalletTransaction#amount}
+     * @param transaction
+     * @return
+     * @throws WalletException 
+     */
     public T credit(WalletTransaction transaction) throws WalletException;
+    
+    /**
+     * Debit {@link WalletTransaction#amount}
+     * @param transaction
+     * @return
+     * @throws WalletException 
+     */
     public T debit(WalletTransaction transaction) throws WalletException;
 }

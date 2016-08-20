@@ -16,5 +16,11 @@ import javainterface.io.FileHolder;
  * @param <T>
  */
 public interface Writer<T> {
+    /**
+     * Write given data to file.
+     * @param data
+     * @param fileHolder
+     * @throws IOException 
+     */
     public void write(T data, FileHolder fileHolder) throws IOException;
 }
