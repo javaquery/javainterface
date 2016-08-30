@@ -6,17 +6,13 @@
 package javainterface.core;
 
 /**
+ * Pluggable (common) code. We used it with {@link RequestHandler}.
  * @author javaQuery
  * @date 20th August, 2016
  * @Github: https://github.com/javaquery/javainterface
  * @param <T>
+ * @param <R>
  */
-public interface Processor<T> {
-     /**
-     * Intended to process data.
-     * @param data 
-     * @return true - finished successfully
-     *         false - otherwise
-     */
-    public boolean process(T data);
+public interface Handler<T,R> {
+    public T handle(R r);
 }
