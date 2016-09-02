@@ -12,5 +12,5 @@ package javainterface.core;
  * @param <T>
  */
 public interface Producer<T> {
-    public void publish(T t);
+    public void send(T t);
 }
